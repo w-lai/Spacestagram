@@ -1,9 +1,7 @@
 
 var req = new XMLHttpRequest();
 var url = "https://api.nasa.gov/planetary/apod?api_key=";
-var api_key = "5t7DjXqJjYUeYWgsjvFr4vaw8xjRZYvCZtXTNyll";
-var date_req = "&date=";
-var date = "2022-01-06";
+
 
 req.open("GET", url + api_key);
 req.send();
