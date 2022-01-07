@@ -18,7 +18,3 @@ req.addEventListener("load", function(){
 })
 
 
-var div = document.createElement('div');
-   div.setAttribute('id', iID);
-   div.innerHTML = Address + '<br />' + City + State + Zip;
-   document.body.appendChild(div); 
