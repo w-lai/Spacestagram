@@ -16,3 +16,9 @@ req.addEventListener("load", function(){
     document.getElementById("explanation").textContent = response.explanation;
   }
 })
+
+
+var div = document.createElement('div');
+   div.setAttribute('id', iID);
+   div.innerHTML = Address + '<br />' + City + State + Zip;
+   document.body.appendChild(div); 
