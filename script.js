@@ -23,7 +23,7 @@ function generate(){
 	if(req.status == 200 && req.readyState == 4){
   	var response = JSON.parse(req.responseText);
 	const para = document.createElement("a");
-	const node = document.createTextNode(response.title);
+	const node = document.createTextNode("hello");
 	const node1 = document.createTextNode(response.date);
 	const node3 = document.createTextNode(response.explanation);
 	var node2 = document.createElement("img");
