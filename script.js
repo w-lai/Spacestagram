@@ -22,7 +22,7 @@ function generate(){
 	var date = "2022-01-06";
 	req.open("GET", url + api_key + date_req + date);
 	req.send();
-	if(req.status == 200 && req.readyState == 4){
+
   	var response = JSON.parse(req.responseText);
 	const para = document.createElement("a");
 	const node = document.createTextNode("hello");
@@ -36,5 +36,4 @@ function generate(){
 	para.appendChild(node2);
 	para.appendChild(node3);
 	
-	}
 }
