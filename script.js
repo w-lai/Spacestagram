@@ -24,4 +24,14 @@ function generate(){
   	var response = JSON.parse(req.responseText);
 	const para = document.createElement("p");
 	const node = document.createTextNode(response.title);
+	const node1 = document.createTextNode(response.date);
+	const node3 = document.createTextNode(response.explanation);
+	var node2 = document.createElement("img");
+	node2.src = response.hdurl;
+
+	para.appendChild(node);
+	para.appendChild(node1);
+	para.appendChild(node2);
+	para.appendChild(node3);
+	
 	}
