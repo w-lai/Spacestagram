@@ -22,7 +22,7 @@ req.send();
 function generate(){
 	if(req.status == 200 && req.readyState == 4){
   	var response = JSON.parse(req.responseText);
-	const para = document.createElement("p");
+	const para = document.createElement("a");
 	const node = document.createTextNode(response.title);
 	const node1 = document.createTextNode(response.date);
 	const node3 = document.createTextNode(response.explanation);
