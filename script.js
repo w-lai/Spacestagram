@@ -19,3 +19,9 @@ req.addEventListener("load", function(){
 })
 
 
+function generate(){
+	if(req.status == 200 && req.readyState == 4){
+  	var response = JSON.parse(req.responseText);
+	const para = document.createElement("p");
+	const node = document.createTextNode(response.title);
+	}
