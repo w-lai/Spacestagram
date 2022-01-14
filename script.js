@@ -30,7 +30,7 @@ function generate(){
 			return `<div class="post">
 			<p>${user.title}</p>
 			<p>${user.date}</p>
-			<p><img src="${user.hdurl}"/></p>
+			<p><img src="${user.hdurl}" width="400" height= "500" /></p>
 			<p>${user.explanation}</p>
 			</div>`;
 		}).join("");
