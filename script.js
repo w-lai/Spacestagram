@@ -43,7 +43,7 @@ function generate(){
 function like(x){
 	if (x.innerHTML == "Like") {
 		x.innerHTML = "Unlike";
-		document.getElementbyId("heart").hidden = false;
+		document.getElementById("heart").hidden = false;
 		setTimeout(function() {document.getElementById("heart").hidden = true;}, 100);
 	}
 	else x.innerHTML = "Like";
