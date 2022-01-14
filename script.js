@@ -24,7 +24,7 @@ function generate(){
 		}
 		return response.json();
 	}).then(data => {
-		const stuff = data.data.map(user=> {
+		const stuff = data.map(user=> {
 			return `<div class="post">
 			<p>$[user.title]</p>
 			<p>$[user.date]</p>
