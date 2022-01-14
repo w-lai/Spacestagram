@@ -40,7 +40,7 @@ function generate(){
 }
 	
 function like(x){
-	if (x.value == "Like") x.value = "Unlike";
-	else x.value = "Like";
+	if (x.innerHTML == "Like") x.innerHTML = "Unlike";
+	else x.innerHTML = "Like";
 }
 
