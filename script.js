@@ -22,9 +22,6 @@ function generate(){
 		if (!response.ok) {
 			throw Error("error");
 		}
-		jQuery(response).ready(function() {
-    		jQuery('#loading').fadeOut(3000);
-		});
 		return response.json();
 	}).then(data => {
 		console.log(data);
