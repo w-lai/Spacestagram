@@ -31,7 +31,7 @@ function generate(){
 			return `<div class="post">
 			<p id="title">${user.title}</p>
 			<p>${user.date}</p>
-			<p><img src="${user.hdurl}" width="350" height= "250" /></p>
+			<p id="pic"><img src="${user.hdurl}" width="350" height= "250" /></p>
 			<p hidden id=idh><img src="Heart.png" width="350" height= "250" /></p>
 			<p>${user.explanation}</p>
 			<button onclick="like(this, idh)">Like</button>
@@ -45,7 +45,11 @@ function like(x, y){
 	if (x.innerHTML == "Like") {
 		x.innerHTML = "Unlike";
 		document.getElementById(y).hidden = false;
-		setTimeout(function() {document.getElementById(y).hidden = true;}, 100);
+		document.getElementById("pic").hidden = true;
+		setTimeout(function() {
+			document.getElementById(y).hidden = true;
+			document.getElementById("pic").hidden = false;
+		}, 100);
 	}
 	else x.innerHTML = "Like";
 	
