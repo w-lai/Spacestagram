@@ -44,10 +44,10 @@ function generate(){
 function like(x, y){
 	if (x.innerHTML == "Like") {
 		x.innerHTML = "Unlike";
-		document.getElementById(y).hidden = false;
+		document.getElementById("heart").hidden = false;
 		document.getElementById("pic").hidden = true;
 		setTimeout(function() {
-			document.getElementById(y).hidden = true;
+			document.getElementById("heart").hidden = true;
 			document.getElementById("pic").hidden = false;
 		}, 100);
 	}
