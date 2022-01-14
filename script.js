@@ -42,9 +42,10 @@ function generate(){
 	
 function like(x){
 	if (x.innerHTML == "Like") x.innerHTML = "Unlike";
-	else x.innerHTML = "Like";
 	document.getElementbyId("heart").hidden = false;
 	setTimeout(function() {document.getElementbyId("heart").hidden = true;}, 100);
+	else x.innerHTML = "Like";
+	
 	
 }
 
