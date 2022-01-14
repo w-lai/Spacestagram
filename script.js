@@ -24,6 +24,7 @@ function generate(){
 		}
 		return response.json();
 	}).then(data => {
+		console.log(data);
 		const stuff = data;
 // 		const stuff = data.map(user=> {
 // 			return `<div class="post">
