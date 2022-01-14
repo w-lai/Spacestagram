@@ -44,7 +44,7 @@ function like(x){
 	if (x.innerHTML == "Like") {
 		x.innerHTML = "Unlike";
 		document.getElementbyId("heart").hidden = false;
-		setTimeout(function() {document.getElementbyId("heart").hidden = true;}, 100);
+		setTimeout(function() {document.getElementById("heart").hidden = true;}, 100);
 	}
 	else x.innerHTML = "Like";
 	
