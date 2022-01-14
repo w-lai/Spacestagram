@@ -2,6 +2,9 @@
   background-color: white;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-radius: 25px;
+  width: 200px;
+  height: 150px;
 }
 
 body {
