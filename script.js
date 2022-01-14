@@ -18,7 +18,7 @@ function generate(){
 	var api_key = "5t7DjXqJjYUeYWgsjvFr4vaw8xjRZYvCZtXTNyll";
 	var date_req = "&date=";
 	var date = "2022-01-06";
-	fetch(url + api_key + date_req + date).then(response => {
+	fetch(url + api_key).then(response => {
 		if (!response.ok) {
 			throw Error("error");
 		}
