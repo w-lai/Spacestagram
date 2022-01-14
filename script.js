@@ -28,7 +28,7 @@ function generate(){
 		
 		const stuff = data.map(user=> {
 			return `<div class="post">
-			<p>${user.title}</p>
+			<p id="title">${user.title}</p>
 			<p>${user.date}</p>
 			<p><img src="${user.hdurl}" width="400" height= "500" /></p>
 			<p>${user.explanation}</p>
