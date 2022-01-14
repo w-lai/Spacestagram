@@ -24,14 +24,15 @@ function generate(){
 		}
 		return response.json();
 	}).then(data => {
-		const stuff = data.map(user=> {
-			return `<div class="post">
-			<p>$[stuff.title]</p>
-			<p>$[stuff.date]</p>
-			<p><img src="$[stuff.hdurl]"/></p>
-			<p>$[stuff.explanation]</p>
-			</div>`;
-		}).join("");
+		const stuff = data;
+// 		const stuff = data.map(user=> {
+// 			return `<div class="post">
+// 			<p>$[stuff.title]</p>
+// 			<p>$[stuff.date]</p>
+// 			<p><img src="$[stuff.hdurl]"/></p>
+// 			<p>$[stuff.explanation]</p>
+// 			</div>`;
+// 		}).join("");
 	document.querySelector("#posts").insertAdjacentHTML("afterbegin", stuff);
 	})
 }
