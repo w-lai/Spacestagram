@@ -28,7 +28,4 @@ button {
   margin: 3px;
 }
 
-#loading {
-position: fixed;
-background: #fff url('images/loader.gif') no-repeat center center;
-}
+
