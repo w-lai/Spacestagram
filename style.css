@@ -3,8 +3,8 @@
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 25px;
-  width: 400px;
-  height: 700px;
+  width: 300px;
+  height: 450px;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 button {
   background-color: white; 
-  border: black;
+  border: 1px solid black;
   color: black;
   padding: 15px 32px;
   text-align: center;
@@ -25,4 +25,5 @@ button {
   display: inline-block;
   font-size: 16px;
   border-radius: 15px;
+  margin: 3px;
 }
