@@ -31,6 +31,7 @@ function generate(){
 			<p id="title">${user.title}</p>
 			<p>${user.date}</p>
 			<p><img src="${user.hdurl}" width="350" height= "250" /></p>
+			<p hidden><img src="Heart.png" width="350" height= "250" /></p>
 			<p>${user.explanation}</p>
 			<button onclick="like(this)">Like</button>
 			</div>`;
