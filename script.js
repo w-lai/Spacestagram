@@ -30,7 +30,7 @@ function generate(){
 			return `<div class="post">
 			<p id="title">${user.title}</p>
 			<p>${user.date}</p>
-			<p><img src="${user.hdurl}" width="150" height= "150" /></p>
+			<p><img src="${user.hdurl}" width="300" height= "250" /></p>
 			<p>${user.explanation}</p>
 			<button onclick="like(this)">Like</button>
 			</div>`;
