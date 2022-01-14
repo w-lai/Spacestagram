@@ -28,10 +28,10 @@ function generate(){
 		
 		const stuff = data.map(user=> {
 			return `<div class="post">
-			<p>$[user.title]</p>
-			<p>$[user.date]</p>
-			<p><img src="$[user.hdurl]"/></p>
-			<p>$[user.explanation]</p>
+			<p>${user.title}</p>
+			<p>${user.date}</p>
+			<p><img src="${user.hdurl}"/></p>
+			<p>${user.explanation}</p>
 			</div>`;
 		}).join("");
 	document.querySelector("#posts").insertAdjacentHTML("afterbegin", stuff);
