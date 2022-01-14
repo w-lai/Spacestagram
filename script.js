@@ -36,4 +36,4 @@ function generate(){
 	})
 }
 	
-
+generate();
