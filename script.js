@@ -32,10 +32,15 @@ function generate(){
 			<p>${user.date}</p>
 			<p><img src="${user.hdurl}" width="400" height= "500" /></p>
 			<p>${user.explanation}</p>
+			<button onclick="like(this)">Like</button>
 			</div>`;
 		}).join("");
 	document.querySelector("#posts").insertAdjacentHTML("afterbegin", stuff);
 	})
 }
 	
-generate();
+function Like(x){
+	if (x.value == "Like") x.value = "Unlike";
+	else x.value = "Like";
+}
+
