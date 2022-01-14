@@ -34,14 +34,14 @@ function generate(){
 			<p id="pic"><img src="${user.hdurl}" width="350" height= "250" /></p>
 			<p hidden id=idh><img src="Heart.png" width="350" height= "250" /></p>
 			<p>${user.explanation}</p>
-			<button onclick="like(this, idh)">Like</button>
+			<button onclick="like(this)">Like</button>
 			</div>`;
 		}).join("");
 	document.querySelector("#posts").insertAdjacentHTML("afterbegin", stuff);
 	})
 }
 	
-function like(x, y){
+function like(x){
 	if (x.innerHTML == "Like") {
 		x.innerHTML = "Unlike";
 		document.getElementById("heart").hidden = false;
